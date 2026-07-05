@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "summary": {
+      "type": "string",
+      "maxLength": 280
+    },
+    "keyDecisions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": {
+        "type": "string",
+        "maxLength": 260
+      }
+    },
+    "goodMoves": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "type": "string",
+        "maxLength": 220
+      }
+    },
+    "mistakes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "type": "string",
+        "maxLength": 260
+      }
+    },
+    "nextHandFocus": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "maxLength": 220
+      }
+    }
+  },
+  "required": ["summary", "keyDecisions", "goodMoves", "mistakes", "nextHandFocus"]
+}
